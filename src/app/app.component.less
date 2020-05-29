@@ -1,0 +1,67 @@
+.resp-tab {
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+.resp-tab th, .resp-tab td {
+    padding: 10px 20px;
+    font-size: 30px;
+    border: none;
+    font-family: Verdana, sans-serif;    
+    border: 1px solid #000;
+    vertical-align: top;
+}
+.resp-tab th {
+    color: #FFF;
+    background: #4B0082;
+    font-weight: bold;
+    border: 1px solid #000;     
+}
+.resp-tab tr:nth-child(even) {
+    background: #edf7ff;
+}
+.resp-tab td span {
+    background: #4B0082;
+    color: #FFF;
+    display: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;           
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;    
+}
+@media(max-width: 768px) {
+    .resp-tab thead {
+        display: none;
+    }
+    .resp-tab tr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .resp-tab td {
+        margin: 0 -1px -1px 0;
+        padding-top: 35px;
+        position: relative;
+        width: 50%;
+    }
+    .resp-tab td span {
+        display: block;
+    }
+}
+@media(max-width: 480px) {
+    .resp-tab td {
+        width: 100%;
+    }
+}
+
+
+// .wrapper {
+//     display: flex;
+//     flex-direction: row;
+// }

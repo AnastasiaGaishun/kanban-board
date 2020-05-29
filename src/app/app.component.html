@@ -1,0 +1,26 @@
+<app-add-card (newCard)="onAddCard($event)"></app-add-card>
+<table class="resp-tab">
+    <thead>
+        <tr>
+            <th>NEW</th>
+            <th>PROGRESS</th>
+            <th>DONE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <span>NEW</span>
+                <app-colomn [data]="_new"></app-colomn>
+            </td>
+            <td>
+                <span>PROGRESS</span>
+                <app-colomn [data]="_progress"></app-colomn>
+            </td>
+            <td>
+                <span>DONE</span>
+                <app-colomn [data]="_done"></app-colomn>
+            </td>
+        </tr>
+    </tbody>
+</table> 
